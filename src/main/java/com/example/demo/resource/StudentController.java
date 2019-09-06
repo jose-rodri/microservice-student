@@ -23,6 +23,8 @@ public class StudentController {
 	private StudentRepository repository;
 	
 	
+	
+	//agregarr
 	@PostMapping("/addStudent")
 	public String saveStudent(@RequestBody Student student) {
 		repository.save(student);

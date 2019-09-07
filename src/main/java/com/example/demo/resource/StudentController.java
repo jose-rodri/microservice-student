@@ -18,13 +18,14 @@ import com.example.demo.repository.StudentRepository;
 @RestController
 public class StudentController {
 
+	// prueba de proyecto sin microservicios V.1.0.0
 	
 	@Autowired
 	private StudentRepository repository;
 	
 	
 	
-	//agregarr
+	
 	@PostMapping("/addStudent")
 	public String saveStudent(@RequestBody Student student) {
 		repository.save(student);

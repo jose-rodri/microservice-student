@@ -29,7 +29,7 @@ public class StudentController {
 	@PostMapping("/addStudent")
 	public String saveStudent(@RequestBody Student student) {
 		repository.save(student);
-		return "Agregar el estududiante con id :"+student.getId();
+		return "El estudiante fue agreado con exito :"+student.getId();
 	}
 	
 	
@@ -47,7 +47,7 @@ public class StudentController {
 	@DeleteMapping("/delete/{id}")
 	public String deleteStudents(@PathVariable int id) {
 		repository.deleteById(id);
-		return "Eliminar estudiante con id : " + id;
+		return "El estudiante fue eliminado : " + id;
 	}
 	
 }
